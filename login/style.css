@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Corpo da página */
+  body {
+    background-color: #033315; 
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+  }
+  
+  /* Container */
+  .container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  /* Imagem */
+  .img-login img {
+    max-width: 500px;
+    height: auto;
+  }
+  
+  /* Login */
+  .base {
+    background-color: #066636;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+  }
+  
+  /* Título */
+  .base h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #ffffff;
+  }
+  
+  /* Inputs */
+  .usuario, .senha {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #ffffff;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #033315;
+    color: #fff;
+  }
+  
+  .senha-recuperar {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .senha-recuperar a {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .senha-recuperar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botão */
+  button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #00ff88, #00c66e);
+    color: #033315;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff88aa;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px #00ff88dd;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container-login {
+      flex-direction: column;
+    }
+  
+    .img-login img {
+      max-width: 300px;
+    }
+  }
+  
